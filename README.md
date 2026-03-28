@@ -44,12 +44,7 @@ EcoPrompt addresses this by:
 
 ### Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/ecoprompt-bot.git
-   cd ecoprompt-bot
-   ```
-
+1. Clone the repository
 2. Create a virtual environment and install dependencies:
    ```bash
    python -m venv .venv
