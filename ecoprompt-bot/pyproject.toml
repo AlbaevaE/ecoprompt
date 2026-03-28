@@ -1,0 +1,23 @@
+[project]
+name = "ecoprompt-bot"
+version = "0.1.0"
+description = "Telegram bot teaching efficient AI prompting for Kyrgyz & Russian-speaking students"
+requires-python = ">=3.10"
+dependencies = [
+    "aiogram>=3.10",
+    "sqlalchemy[asyncio]>=2.0",
+    "asyncpg>=0.29",
+    "aiosqlite>=0.20",
+    "alembic>=1.13",
+    "pydantic-settings>=2.0",
+    "tiktoken>=0.7",
+    "apscheduler>=3.10",
+    "anthropic>=0.40",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.5",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]

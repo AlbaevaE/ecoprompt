@@ -1,0 +1,151 @@
+[
+    {
+        "id": "explain_photosynthesis",
+        "description": {
+            "ru": "Напишите промпт, который попросит ИИ объяснить фотосинтез как репетитор, шаг за шагом, для ученика 8 класса.",
+            "ky": "ИИдан фотосинтезди репетитор сыяктуу, кадам-кадам менен, 8-класстын окуучусу үчүн түшүндүрүүнү сураган промпт жазыңыз."
+        },
+        "baseline_tokens": 85,
+        "criteria": [
+            {"pattern": "(объясни|explain|түшүндүр)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(шаг|step|кадам)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(8.*класс|grade\\s*8|8-класс)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(простым?и?\\s*словами|simple|жөнөкөй)", "quality_boost": 0.5, "points": 1},
+            {"pattern": "(репетитор|tutor|мугалим)", "quality_boost": 0.5, "points": 2}
+        ]
+    },
+    {
+        "id": "quiz_kyrgyz_history",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ создал тест из 5 вопросов по истории Кыргызстана для подготовки к экзамену.",
+            "ky": "ИИ Кыргызстандын тарыхы боюнча экзаменге даярданууга 5 суроодон турган тест түзүшү үчүн промпт жазыңыз."
+        },
+        "baseline_tokens": 90,
+        "criteria": [
+            {"pattern": "(тест|quiz|викторин)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(5|пять|беш)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(истори|history|тарых)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(кыргыз|kyrgyz)", "quality_boost": 0.5, "points": 1},
+            {"pattern": "(вариант|multiple.choice|variant)", "quality_boost": 0.5, "points": 2}
+        ]
+    },
+    {
+        "id": "check_essay_logic",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ проверил ваше эссе на логические ошибки (НЕ писал его за вас). ИИ должен указать слабые места в аргументации.",
+            "ky": "ИИ сиздин эссеңизди логикалык каталар үчүн текшерүүсүн сураган промпт жазыңыз (сиз үчүн ЖАЗБАСЫН). ИИ аргументациядагы алсыз жерлерди көрсөтүшү керек."
+        },
+        "baseline_tokens": 95,
+        "criteria": [
+            {"pattern": "(проверь|check|review|текшер)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(логик|logic)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(ошибк|error|mistake|катал)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(аргумент|argument|reasoning)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(не пиши|don't write|жазба)", "quality_boost": 1.0, "points": 3}
+        ]
+    },
+    {
+        "id": "math_tutor",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ помог разобраться с квадратными уравнениями: не решал задачу, а объяснял метод решения с примерами.",
+            "ky": "ИИ квадраттык теңдемелерди түшүнүүгө жардам бериши үчүн промпт жазыңыз: маселени чечпесин, ал чечүү ыкмасын мисалдар менен түшүндүрсүн."
+        },
+        "baseline_tokens": 100,
+        "criteria": [
+            {"pattern": "(квадрат|quadratic|квадраттык)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(объясни|explain|түшүндүр)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(метод|method|ыкма|способ)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(пример|example|мисал)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(не реши|don't solve|чечпе)", "quality_boost": 1.0, "points": 3}
+        ]
+    },
+    {
+        "id": "english_practice",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ стал вашим собеседником для практики английского на тему путешествий. Уровень — B1.",
+            "ky": "ИИ саякат темасында англис тилин машыктыруу үчүн сүйлөшмөчү болушу үчүн промпт жазыңыз. Деңгээл — B1."
+        },
+        "baseline_tokens": 80,
+        "criteria": [
+            {"pattern": "(собеседник|conversation|partner|сүйлөшмөчү|диалог)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(английск|english|англис)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(путешеств|travel|саякат)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(B1|intermediate|средн)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(исправляй|correct|оңдо|fix)", "quality_boost": 0.5, "points": 2}
+        ]
+    },
+    {
+        "id": "summarize_article",
+        "description": {
+            "ru": "Напишите промпт для краткого пересказа научной статьи в 3 пунктах. Промпт должен быть максимально коротким.",
+            "ky": "Илимий макаланы 3 пунктта кыска баяндоо үчүн промпт жазыңыз. Промпт мүмкүн болушунча кыска болушу керек."
+        },
+        "baseline_tokens": 70,
+        "criteria": [
+            {"pattern": "(пересказ|summar|баяндо|кратко|кыска)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(3|три|үч|three)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(пункт|point|bullet)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(научн|scien|илимий)", "quality_boost": 0.5, "points": 1}
+        ]
+    },
+    {
+        "id": "explain_mistakes",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ проанализировал вашу ошибку в задаче по физике и объяснил, где вы ошиблись, без готового ответа.",
+            "ky": "ИИ физика боюнча тапшырмадагы катаңызды талдап, кайда ката кеткенин, даяр жоопсуз түшүндүрүшү үчүн промпт жазыңыз."
+        },
+        "baseline_tokens": 90,
+        "criteria": [
+            {"pattern": "(анализ|analyz|талда)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(ошибк|error|mistake|ката)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(физик|physics)", "quality_boost": 0.5, "points": 1},
+            {"pattern": "(объясни|explain|түшүндүр)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(без.*ответ|without.*answer|жоопсуз|don't give.*answer)", "quality_boost": 1.0, "points": 3}
+        ]
+    },
+    {
+        "id": "study_plan",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ составил план подготовки к экзамену по биологии на 2 недели.",
+            "ky": "ИИ биология боюнча экзаменге 2 жумалык даярдануу планын түзүшү үчүн промпт жазыңыз."
+        },
+        "baseline_tokens": 75,
+        "criteria": [
+            {"pattern": "(план|plan)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(подготовк|prepar|даярдан)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(экзамен|exam)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(2.*недел|2.*week|2.*жума)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(биолог|biology)", "quality_boost": 0.5, "points": 1}
+        ]
+    },
+    {
+        "id": "concept_comparison",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ сравнил митоз и мейоз в формате таблицы для повторения.",
+            "ky": "ИИ митоз менен мейозду кайталоо үчүн таблица форматында салыштырышы үчүн промпт жазыңыз."
+        },
+        "baseline_tokens": 65,
+        "criteria": [
+            {"pattern": "(сравни|compare|салыштыр)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(митоз|mitosis)", "quality_boost": 0.5, "points": 1},
+            {"pattern": "(мейоз|meiosis)", "quality_boost": 0.5, "points": 1},
+            {"pattern": "(таблиц|table)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(повторен|review|кайталоо)", "quality_boost": 0.5, "points": 2}
+        ]
+    },
+    {
+        "id": "socratic_method",
+        "description": {
+            "ru": "Напишите промпт, чтобы ИИ задавал вам наводящие вопросы по теме «демократия», вместо того чтобы давать готовые ответы.",
+            "ky": "ИИ «демократия» темасы боюнча даяр жооптордун ордуна багыттоочу суроолорду берүүсүн сураган промпт жазыңыз."
+        },
+        "baseline_tokens": 85,
+        "criteria": [
+            {"pattern": "(вопрос|question|суроо)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(наводящ|guiding|leading|багыттоочу|сократ|socrat)", "quality_boost": 1.0, "points": 3},
+            {"pattern": "(демократ|democracy)", "quality_boost": 0.5, "points": 1},
+            {"pattern": "(не дав|without.*answer|don't.*answer|жоопсуз)", "quality_boost": 0.5, "points": 2},
+            {"pattern": "(думать|think|ойлон)", "quality_boost": 0.5, "points": 2}
+        ]
+    }
+]
