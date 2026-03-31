@@ -3,7 +3,7 @@ from datetime import date, datetime
 from sqlalchemy import select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from bot.db.models import DailyTipLog, LessonCompletion, PracticeAttempt, User
+from bot.db.models import DailyTipLog, Feedback, LessonCompletion, PracticeAttempt, User
 
 
 async def get_or_create_user(
@@ -186,3 +186,13 @@ async def log_tip_sent(session: AsyncSession, user_id: int, tip_index: int) -> N
     log = DailyTipLog(user_id=user_id, tip_index=tip_index)
     session.add(log)
     await session.commit()
+
+
+async def save_feedback(
+    session: AsyncSession, user_id: int, category: str, text: str
+) -> Feedback:
+    fb = Feedback(user_id=user_id, category=category, text=text)
+    session.add(fb)
+    await session.commit()
+    await session.refresh(fb)
+    return fb

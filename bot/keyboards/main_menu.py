@@ -15,7 +15,8 @@ def main_menu(t) -> ReplyKeyboardMarkup:
         keyboard=[
             [KeyboardButton(text=t("menu_lessons")), KeyboardButton(text=t("menu_practice"))],
             [KeyboardButton(text=t("menu_stats")), KeyboardButton(text=t("menu_tip"))],
-            [KeyboardButton(text=t("menu_resources")), KeyboardButton(text=t("menu_settings"))],
+            [KeyboardButton(text=t("menu_resources")), KeyboardButton(text=t("menu_feedback"))],
+            [KeyboardButton(text=t("menu_settings"))],
         ],
         resize_keyboard=True,
     )

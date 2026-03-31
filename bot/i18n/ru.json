@@ -33,5 +33,14 @@
     "settings_reset_done": "Прогресс сброшен.",
     "back": "⬅️ Назад",
     "next_lesson": "Следующий урок ➡️",
-    "ai_feedback_result": "🤖 Совет от ИИ:\n\n{feedback}"
+    "ai_feedback_result": "🤖 Совет от ИИ:\n\n{feedback}",
+    "menu_feedback": "💬 Обратная связь",
+    "feedback_title": "💬 Обратная связь\n\nВыберите категорию:",
+    "feedback_materials": "📚 Дополнительные материалы",
+    "feedback_curriculum": "📝 Предложения по программе",
+    "feedback_bug": "🐛 Сообщить об ошибке",
+    "feedback_other": "💭 Другое",
+    "feedback_prompt": "Напишите ваше сообщение:",
+    "feedback_thanks": "✅ Спасибо за ваш отзыв! Мы обязательно его рассмотрим.",
+    "feedback_cancel": "Отправка отзыва отменена."
 }

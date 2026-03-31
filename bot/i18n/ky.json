@@ -33,5 +33,14 @@
     "settings_reset_done": "Прогресс баштапкы абалга келтирилди.",
     "back": "⬅️ Артка",
     "next_lesson": "Кийинки сабак ➡️",
-    "ai_feedback_result": "🤖 ИИдан кеңеш:\n\n{feedback}"
+    "ai_feedback_result": "🤖 ИИдан кеңеш:\n\n{feedback}",
+    "menu_feedback": "💬 Кайтарым байланыш",
+    "feedback_title": "💬 Кайтарым байланыш\n\nКатегорияны тандаңыз:",
+    "feedback_materials": "📚 Кошумча материалдар",
+    "feedback_curriculum": "📝 Программа боюнча сунуштар",
+    "feedback_bug": "🐛 Ката тууралуу кабарлоо",
+    "feedback_other": "💭 Башка",
+    "feedback_prompt": "Билдирүүңүздү жазыңыз:",
+    "feedback_thanks": "✅ Пикириңиз үчүн рахмат! Биз аны сөзсүз карайбыз.",
+    "feedback_cancel": "Пикир жөнөтүү жокко чыгарылды."
 }

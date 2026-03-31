@@ -6,7 +6,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 
 from bot.config import settings
 from bot.db.session import init_db
-from bot.handlers import lessons, practice, resources, settings as settings_handler, start, tips, tracker
+from bot.handlers import feedback, lessons, practice, resources, settings as settings_handler, start, tips, tracker
 from bot.middlewares.i18n import I18nMiddleware, load_translations
 from bot.middlewares.throttle import ThrottleMiddleware
 from bot.services.lesson_engine import load_quizzes
@@ -40,6 +40,7 @@ async def main():
     dp.include_router(tracker.router)
     dp.include_router(tips.router)
     dp.include_router(resources.router)
+    dp.include_router(feedback.router)
     dp.include_router(settings_handler.router)
 
     logger.info("EcoPrompt bot starting...")
