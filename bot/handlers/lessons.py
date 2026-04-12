@@ -141,6 +141,6 @@ async def _complete_lesson(callback, slug, db_user=None, session=None, t=None, *
         )])
         kb = InlineKeyboardMarkup(inline_keyboard=kb_buttons)
         await callback.message.answer(
-            t("lesson_complete", points=POINTS_LESSON_COMPLETE, tokens_saved=0),
+            t("lesson_complete"),
             reply_markup=kb,
         )
